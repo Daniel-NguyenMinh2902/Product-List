@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;   
+    background-color: #d68484;
+    color:bisque; 
+} 
+
+h1{
+    text-align: center;
+} 
+
+h2{ 
+    text-align: center;
+} 
+
+/* Galerie */
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 5px; /* Espacement entre les éléments */ 
+    justify-items: center; /* Centrer horizontalement les projets */
+    margin: 20px auto; /* Centrer toute la galerie horizontalement */ 
+}
+
+.product_type {
+    text-align: center; /* Centrer le contenu dans chaque projet */
+    background-color: lightcoral;  
+    padding: 1rem;
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 8px; /* Coins arrondis */
+    width: 100%; /* Ajuster la largeur au conteneur */ 
+    max-width: 400px; /* Largeur maximale d’un projet */ 
+    transition: transform 0.3s; 
+}
+
+.product_type:hover { 
+    transform: scale(1.05); 
+}
+
+.product_type img {
+    max-width: 100%; /* Images responsives */ 
+    height: auto; 
+    border-radius: 8px; /* Coins arrondis pour l'image */
+} 
+.galerie h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: bisque; 
+}
+
+.product-list{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;  
+    justify-content: center;   
+}
+
+.product{
+    border: 1px solid rgb(221, 45, 25); 
+    padding: 10px; 
+    width: 500px;   
+    text-align: center;
+    border-radius: 8px;  
+    background-color:lightcoral; 
+    flex: 1 1 calc(30% - 10px); 
+    transition: transform 0.3s; 
+    gap: 5px; 
+}
+
+.product:hover{ 
+    transform: scale(1.05);
+}
+
+.product h3{
+    margin: 0 0 10px; 
+}
+
+.social-link{
+    color: bisque; 
+    transition: color 0.3s, transform 0.5s;  
+}
+
+.social-link:hover{
+    color: aqua; 
+    transform: scale(0.5);
+}
+
+ 
